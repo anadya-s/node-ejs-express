@@ -1,0 +1,102 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem auto;
+  max-width: 700px;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #222;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.post {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.post p {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: royalblue;
+  box-shadow: 0 0 5px rgba(65,105,225,0.5);
+}
+
+button {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2b4fb3;
+}
+
+/* Inline delete form inside post */
+form[style*="inline"] {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .post {
+    padding: 1rem;
+  }
+}
